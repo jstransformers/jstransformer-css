@@ -13,11 +13,22 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var jstransformerCss = require('jstransformer-css');
+var css = require('jstransformer-css');
+
+css.render('body {\n  font-size: 12px;\n}');
+//=> json abstract syntax tree
 ```
 
 
-## API / CLI
+## Related
+- [blink](http://blinkjs.github.io/blink): Blink converts Node.js modules into CSS and provides a CSS Authoring Framework, with BEM support.
+- [absurd](http://absurdjs.com/): JavaScript library with superpowers - http://absurdjs.com/
+- [css](https://github.com/reworkcss/css): CSS parser / stringifier
+- [rework](https://github.com/reworkcss/rework): Plugin framework for CSS preprocessing
+- [gonzales](http://github.com/css/gonzales): Gonzales — fast CSS parser
+- [postcss](https://github.com/postcss/postcss): Tool for transforming CSS with JS plugins
+- [cssp](http://github.com/css/cssp): CSSP — Ometa-JS based CSS parser
+- [cssom](https://github.com/NV/CSSOM): CSS Object Model implementation and CSS parser
 
 
 ## Author
