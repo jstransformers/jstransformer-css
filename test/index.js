@@ -9,13 +9,12 @@
 
 var fs = require('fs');
 var css = require('css');
-var test = require('testit');
-var assert = require('assert');
-var transform = require('./index');
+var test = require('assertit');
+var transform = require('../index');
 
 test('jstransformer-css', function(done) {
   var json = transform.render('body { background: #eee; color: #888; }');
-  assert.deepEqual(json, fs.readFileSync('./expected.json', 'utf8'));
+  test.deepEqual(json, fs.readFileSync('./test/expected.json', 'utf8'));
   done();
 });
 
@@ -24,8 +23,8 @@ test('should support sourcemaps', function(done) {
   var ast = transform.render(code, {source: 'body.css'});
   var data = css.stringify(JSON.parse(ast), {sourcemap: true});
 
-  assert.strictEqual(typeof data, 'object');
-  assert.strictEqual(data.code, code);
-  assert.deepEqual(data.map.sources, ['body.css']);
+  test.equal(typeof data, 'object');
+  test.equal(data.code, code);
+  test.deepEqual(data.map.sources, ['body.css']);
   done();
 });
