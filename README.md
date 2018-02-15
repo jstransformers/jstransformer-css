@@ -17,7 +17,7 @@
 > For more use-cases see the [tests](./test/index.js)
 
 ```js
-var css = require('jstransformer-css');
+var css = require('jstransformer-css')
 
 css.render('body {\n  font-size: 12px;\n}');
 //=> json abstract syntax tree
