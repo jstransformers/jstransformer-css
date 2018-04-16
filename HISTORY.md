@@ -1,6 +1,6 @@
+# Changelog
 
-
-## v0.2.0 / April 10, 2015
+## v0.2.0: 2015-03-10
 - publish v0.2.0 to npm
 - refactor, template cruft, close #1
 

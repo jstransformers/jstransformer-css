@@ -1,6 +1,6 @@
 'use strict'
 
-var css = require('css')
+const css = require('css')
 
 exports.name = 'css'
 exports.outputFormat = 'json'

@@ -1,21 +1,24 @@
 {
+  "dependencies": {
+    "css": "~2.2.0"
+  },
   "name": "jstransformer-css",
   "version": "0.2.0",
   "description": "Transform CSS to JSON AST using `reworkcss/css`.",
+  "keywords": [
+    "jstransformer"
+  ],
   "files": [
     "index.js"
   ],
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
-    "xo": "^0.18.1"
-  },
-  "dependencies": {
-    "css": "~2.2.0"
+    "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer",
-    "posttest": "xo --space --no-semicolon index.js"
+    "posttest": "xo --space=2 --no-semicolon index.js"
   },
   "engines": {
     "node": ">=4"
@@ -28,8 +31,5 @@
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "keywords": [
-    "jstransformer"
-  ],
   "license": "MIT"
 }
